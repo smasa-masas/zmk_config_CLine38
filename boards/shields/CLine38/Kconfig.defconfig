@@ -1,0 +1,38 @@
+if SHIELD_CLINE38_R
+
+config ZMK_KEYBOARD_NAME
+    default "CLine38"
+
+config ZMK_BLE
+    default y
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+config INPUT
+    default y
+
+config ZMK_POINTING
+    default y
+
+config SPI
+    default y
+
+config PMW3610_ALT
+    default y
+
+endif
+
+
+if SHIELD_CLINE38_R || SHIELD_CLINE38_L
+
+config ZMK_SPLIT
+    default y
+
+config RGBLED_WIDGET_BATTERY_LEVEL_HIGH
+    default 30
+
+config RGBLED_WIDGET_BATTERY_LEVEL_CRITICAL
+    default 10
+
+endif

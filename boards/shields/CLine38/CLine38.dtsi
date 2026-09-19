@@ -1,0 +1,128 @@
+#include <dt-bindings/zmk/matrix_transform.h>
+#include <physical_layouts.dtsi>
+#include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
+
+/ {
+    chosen {
+        zmk,physical-layout = &cline38_physical_layout;
+        zmk,battery = &non_lipo_battery;
+    };
+
+    cline38_physical_layout: cline38_physical_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Default";
+        transform = <&default_transform>;
+        kscan = <&kscan0>;
+
+        keys  //                     w   h     x    y   rot   rx   ry
+            = <&key_physical_attrs 100 100     0    0     0    0    0> //  0: L-SW1
+            , <&key_physical_attrs 100 100   100    0     0    0    0> //  1: L-SW2
+            , <&key_physical_attrs 100 100   200    0     0    0    0> //  2: L-SW3
+            , <&key_physical_attrs 100 100   300    0     0    0    0> //  3: L-SW4
+            , <&key_physical_attrs 100 100   400    0     0    0    0> //  4: L-SW5
+
+            , <&key_physical_attrs 100 100   800    0     0    0    0> //  5: R-SW1
+            , <&key_physical_attrs 100 100   900    0     0    0    0> //  6: R-SW2
+            , <&key_physical_attrs 100 100  1000    0     0    0    0> //  7: R-SW3
+            , <&key_physical_attrs 100 100  1100    0     0    0    0> //  8: R-SW4
+            , <&key_physical_attrs 100 100  1200    0     0    0    0> //  9: R-SW5
+
+            , <&key_physical_attrs 100 100     0  100     0    0    0> // 10: L-SW6
+            , <&key_physical_attrs 100 100   100  100     0    0    0> // 11: L-SW7
+            , <&key_physical_attrs 100 100   200  100     0    0    0> // 12: L-SW8
+            , <&key_physical_attrs 100 100   300  100     0    0    0> // 13: L-SW9
+            , <&key_physical_attrs 100 100   400  100     0    0    0> // 14: L-SW10
+
+            , <&key_physical_attrs 100 100   800  100     0    0    0> // 15: R-SW6
+            , <&key_physical_attrs 100 100   900  100     0    0    0> // 16: R-SW7
+            , <&key_physical_attrs 100 100  1000  100     0    0    0> // 17: R-SW8
+            , <&key_physical_attrs 100 100  1100  100     0    0    0> // 18: R-SW9
+            , <&key_physical_attrs 100 100  1200  100     0    0    0> // 19: R-SW10
+
+            , <&key_physical_attrs 100 100     0  200     0    0    0> // 20: L-SW11
+            , <&key_physical_attrs 100 100   100  200     0    0    0> // 21: L-SW12
+            , <&key_physical_attrs 100 100   200  200     0    0    0> // 22: L-SW13
+            , <&key_physical_attrs 100 100   300  200     0    0    0> // 23: L-SW14
+            , <&key_physical_attrs 100 100   400  200     0    0    0> // 24: L-SW15
+
+            , <&key_physical_attrs 100 100   800  200     0    0    0> // 25: R-SW11
+            , <&key_physical_attrs 100 100   900  200     0    0    0> // 26: R-SW12
+            , <&key_physical_attrs 100 100  1000  200     0    0    0> // 27: R-SW13
+            , <&key_physical_attrs 100 100  1100  200     0    0    0> // 28: R-SW14
+            , <&key_physical_attrs 100 100  1200  200     0    0    0> // 29: R-SW15
+
+            , <&key_physical_attrs 100 100   100  300     0    0    0> // 30: L-SW16
+            , <&key_physical_attrs 100 100   200  300     0    0    0> // 31: L-SW17
+            , <&key_physical_attrs 100 100   300  300     0    0    0> // 32: L-SW18
+            , <&key_physical_attrs 100 100   400  300     0    0    0> // 33: L-SW19
+            , <&key_physical_attrs 100 100   500  300     0    0    0> // 34: L-SW20
+
+            , <&key_physical_attrs 100 100   700  300     0    0    0> // 35: R-SW16
+            , <&key_physical_attrs 100 100   800  300     0    0    0> // 36: R-SW17
+            , <&key_physical_attrs 100 100  1100  300     0    0    0> // 37: R-SW18
+            ;
+    };
+
+    default_transform: keymap_transform_0 {
+        compatible = "zmk,matrix-transform";
+        //columns = <11>;
+        //rows = <6>;
+        columns = <12>;
+        rows = <4>;
+        map = <
+            RC(1,0) RC(2,0) RC(3,0) RC(4,0) RC(5,0)                  RC(1,6) RC(2,6) RC(3,6) RC(4,6) RC(5,6)
+            RC(0,1) RC(2,1) RC(3,1) RC(4,1) RC(5,1)                  RC(0,7) RC(2,7) RC(3,7) RC(4,7) RC(5,7)
+            RC(0,2) RC(1,2) RC(3,2) RC(4,2) RC(5,2)                  RC(0,8) RC(1,8) RC(3,8) RC(4,8) RC(5,8)
+                    RC(0,3) RC(1,3) RC(2,3) RC(4,3) RC(5,3)  RC(0,9) RC(1,9)                 RC(2,9)
+        >;
+    };
+
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-charlieplex";
+        gpios
+        = <&xiao_d 2 (GPIO_ACTIVE_HIGH)>
+        , <&xiao_d 3 (GPIO_ACTIVE_HIGH)>
+        , <&xiao_d 4 (GPIO_ACTIVE_HIGH)>
+        , <&xiao_d 5 (GPIO_ACTIVE_HIGH)>
+        , <&xiao_d 6 (GPIO_ACTIVE_HIGH)>
+        , <&xiao_d 7 (GPIO_ACTIVE_HIGH)>
+        ;
+        wakeup-source;
+        interrupt-gpios = <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+    };
+
+    trackball_listener: trackball_listener {
+        compatible = "zmk,input-listener";
+        status = "disabled";
+    };
+
+    vbatt: vbatt {
+        // Disable default battery monitoring
+        status = "disabled";
+    };
+    non_lipo_battery: non_lipo_battery {
+        compatible = "zmk,non-lipo-battery";
+        io-channels = <&adc 0>;  // Replace with your ADC channel number
+        
+        // Optional: Power control GPIO for the voltage divider
+        //power-gpios = <&gpio0 3 GPIO_ACTIVE_HIGH>;  // Replace with your GPIO
+    };
+};
+
+&adc {
+    status = "okay";
+};
+
+&spi0 {
+    status = "disabled";
+
+    trackball: trackball@0 {
+        status = "disabled";
+        reg = <0>;
+    };
+};
+
+&uicr {
+    nfct-pins-as-gpios;
+};
