@@ -62,10 +62,10 @@
         
         layer_1 {
             bindings = <
-&kp CARET      &kp NUMBER_7   &kp NUMBER_8   &kp NUMBER_9   &kp AT_SIGN                              &kp LEFT_PARENTHESIS    &kp DOUBLE_QUOTES   &kp RIGHT_PARENTHESIS   &kp SEMI    &kp EXCLAMATION
-&kp PLUS       &kp NUMBER_4   &kp NUMBER_5   &kp NUMBER_6   &kp HASH                                 &kp LEFT_BRACKET        &kp SINGLE_QUOTE    &kp RIGHT_BRACKET       &kp COLON   &kp QMARK
-&kp ASTERISK   &kp NUMBER_1   &kp NUMBER_2   &kp NUMBER_3   &kp UNDERSCORE                           &kp SLASH               &kp BACKSLASH       &kp AMPERSAND           &kp PIPE    &kp PERCENT
-               &kp NUMBER_0   &kp DOT        &trans         &trans          &trans          &kp RET  &kp BSPC                                                            &kp DOLLAR
+&kp CARET      &kp NUMBER_7   &kp NUMBER_8   &kp NUMBER_9   &kp AT_SIGN                              &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES      &kp SEMI    &kp EXCLAMATION
+&kp PLUS       &kp NUMBER_4   &kp NUMBER_5   &kp NUMBER_6   &kp HASH                                 &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp SINGLE_QUOTE       &kp COLON   &kp QMARK
+&kp ASTERISK   &kp NUMBER_1   &kp NUMBER_2   &kp NUMBER_3   &kp UNDERSCORE                           &kp SLASH               &kp BACKSLASH          &kp AMPERSAND          &kp PIPE    &kp PERCENT
+               &kp NUMBER_0   &kp DOT        &kp COMMA      &trans          &trans          &kp RET  &kp BSPC                                                              &kp DOLLAR
             >;
         };
 
