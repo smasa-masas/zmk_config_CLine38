@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - A
+  - {t: A, h: LCTRL}
   - S
   - D
   - F
@@ -21,7 +21,7 @@ layers:
   - K
   - L
   - {t: '-', h: RSFT}
-  - Z
+  - {t: Z, h: LSFT}
   - X
   - C
   - V
@@ -36,7 +36,7 @@ layers:
   - {t: INT MUHENKAN, h: MOUSE}
   - {t: SPACE, h: '1'}
   - {t: INT HENKAN, h: LSFT}
-  - {t: RET, h: LCTRL}
+  - RET
   - BSPC
   - DEL
   '1':
