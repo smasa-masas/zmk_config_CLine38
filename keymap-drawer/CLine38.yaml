@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: LCTRL}
+  - A
   - S
   - D
   - F
@@ -20,8 +20,8 @@ layers:
   - J
   - K
   - L
-  - {t: '-', h: RSFT}
-  - {t: Z, h: LSFT}
+  - '-'
+  - {t: Z, h: LEFT SHIFT}
   - X
   - C
   - V
@@ -30,15 +30,15 @@ layers:
   - M
   - ','
   - .
-  - SCROLL
-  - LGUI
+  - {t: INT RO, h: LEFT SHIFT}
+  - LEFT CONTROL
   - LALT
   - {t: INT MUHENKAN, h: MOUSE}
   - {t: SPACE, h: '1'}
   - {t: INT HENKAN, h: LSFT}
-  - RET
-  - BSPC
-  - DEL
+  - BACKSPACE
+  - {t: RET, h: MOUSE}
+  - SCROLL
   '1':
   - ^
   - '7'
@@ -147,7 +147,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: BT, h: '0'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -155,7 +155,7 @@ layers:
   - {t: ▽, type: trans}
   - '&studio_unlock'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   '4':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -274,7 +274,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [12, 13]
+- p: [1, 0]
+  k: ESCAPE
+- p: [10, 11]
   k: TAB
-- p: [11, 12]
-  k: Sft+TAB
+- p: [8, 9]
+  k: DELETE
