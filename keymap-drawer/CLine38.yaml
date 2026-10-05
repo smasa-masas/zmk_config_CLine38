@@ -30,7 +30,7 @@ layers:
   - M
   - ','
   - .
-  - {t: INT RO, h: LEFT SHIFT}
+  - {t: Sft+INT RO, h: LEFT SHIFT}
   - LEFT CONTROL
   - LALT
   - {t: LANGUAGE 2, h: MOUSE}
@@ -75,8 +75,8 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - RET
-  - BSPC
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - $
   MOUSE:
   - {t: ▽, type: trans}
@@ -114,8 +114,8 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - RET
-  - BSPC
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ESC
   SCROLL:
   - BT CLR
@@ -133,7 +133,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
+  - Alt+;
   - LEFT ARROW
   - DOWN ARROW
   - RIGHT ARROW
