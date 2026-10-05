@@ -33,46 +33,46 @@ layers:
   - {t: INT RO, h: LEFT SHIFT}
   - LEFT CONTROL
   - LALT
-  - {t: INT MUHENKAN, h: MOUSE}
+  - {t: LANGUAGE 2, h: MOUSE}
   - {t: SPACE, h: '1'}
-  - {t: INT HENKAN, h: LSFT}
+  - {t: LANGUAGE 1, h: MOUSE}
   - BACKSPACE
-  - {t: RET, h: MOUSE}
+  - {t: RET, h: SCROLL}
   - SCROLL
   '1':
-  - ^
+  - F4
+  - Sft+2
+  - Sft+6
+  - Sft+8
+  - Sft+9
+  - KP PLUS
   - '7'
   - '8'
   - '9'
-  - '@'
-  - (
-  - )
-  - '"'
-  - ;
-  - '!'
-  - +
+  - KP MINUS
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '-'
+  - KP MULTIPLY
   - '4'
   - '5'
   - '6'
-  - '#'
-  - '['
-  - ']'
-  - ''''
-  - ':'
-  - '?'
-  - '*'
+  - KP SLASH
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '0'
   - '1'
   - '2'
   - '3'
-  - _
-  - /
-  - \
-  - '&'
-  - '|'
-  - '%'
-  - '0'
   - .
-  - ','
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - RET
@@ -86,9 +86,9 @@ layers:
   - F10
   - Ctl+Y
   - Ctl+C
-  - Ctl+V
-  - Ctl+X
-  - Ctl+P
+  - '&mkp MB2'
+  - '&mkp MB2'
+  - SCROLL
   - {t: ▽, type: trans}
   - F4
   - F5
@@ -96,7 +96,7 @@ layers:
   - F11
   - Ctl+Z
   - '&mkp MB1'
-  - UP ARROW
+  - '&mkp MB1'
   - '&mkp MB2'
   - Ctl+F
   - {t: ▽, type: trans}
@@ -119,43 +119,43 @@ layers:
   - ESC
   SCROLL:
   - BT CLR
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - BT CLR ALL
-  - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
+  - Alt+Sft+-
+  - Ctl+PAGE UP
+  - UP ARROW
+  - Ctl+PAGE DOWN
+  - Sft+Gui+S
+  - BT CLR ALL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: BT, h: '4'}
+  - {t: ▽, type: trans}
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - BRIGHTNESS INC
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: BT, h: '0'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BRIGHTNESS DEC
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&studio_unlock'
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   '4':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
