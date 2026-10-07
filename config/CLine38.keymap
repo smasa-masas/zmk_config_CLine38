@@ -30,6 +30,11 @@
             bindings = <&kp DELETE>;
             key-positions = <8 9>;
         };
+
+        layer4 {
+            bindings = <&mo 4>;
+            key-positions = <34 35>;
+        };
     };
 
     macros {
@@ -93,7 +98,7 @@
 
         layer_4 {
             bindings = <
-&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                    &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                    &trans  &trans  &trans  &trans  &studio_unlock
 &bt BT_CLR_ALL  &bt BT_SEL 4  &trans        &trans        &trans                          &trans  &trans  &trans  &trans  &trans
 &trans          &trans        &trans        &trans        &trans                          &trans  &trans  &trans  &trans  &trans
                 &trans        &trans        &trans        &trans        &trans    &trans  &trans                  &trans
