@@ -166,7 +166,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&studio_unlock'
   - BT CLR ALL
   - {t: BT, h: '4'}
   - {t: ▽, type: trans}
@@ -191,8 +191,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '5':
@@ -280,3 +280,5 @@ combos:
   k: TAB
 - p: [8, 9]
   k: DELETE
+- p: [34, 35]
+  k: '4'
