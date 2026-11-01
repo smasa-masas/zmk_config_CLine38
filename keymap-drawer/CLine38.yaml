@@ -20,7 +20,7 @@ layers:
   - J
   - K
   - L
-  - '-'
+  - {t: '-', h: SCROLL}
   - {t: Z, h: LEFT SHIFT}
   - X
   - C
@@ -30,7 +30,7 @@ layers:
   - M
   - ','
   - .
-  - {t: Sft+INT RO, h: LEFT SHIFT}
+  - {t: Sft+INT RO, h: (LEFT SHIFT)}
   - LEFT CONTROL
   - LALT
   - {t: LANGUAGE 2, h: MOUSE}
@@ -137,7 +137,7 @@ layers:
   - LEFT ARROW
   - DOWN ARROW
   - RIGHT ARROW
-  - BRIGHTNESS INC
+  - {t: BRIGHTNESS INC, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -154,7 +154,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&studio_unlock'
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '4':
   - BT CLR
